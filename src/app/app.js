@@ -13,6 +13,10 @@ angular.module('BlurAdmin', [
   'ngJsTree',
   'angular-progress-button-styles',
 
+  // We've added the angular-translate
+  // library to the app dependencies
+  'pascalprecht.translate',
+
   'BlurAdmin.theme',
   'BlurAdmin.pages'
 ]);

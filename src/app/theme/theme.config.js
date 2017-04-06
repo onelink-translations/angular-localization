@@ -9,8 +9,8 @@
     .config(config);
 
   /** @ngInject */
-  function config(baConfigProvider, colorHelper, $provide) {
-    $provide.decorator('$uiViewScroll', uiViewScrollDecorator);
+  function config(baConfigProvider, colorHelper, $provide, $translateProvider) {
+    $provide.decorator('$uiViewScroll', uiViewScrollDecorator, $translateProvider);
     //baConfigProvider.changeTheme({blur: true});
     //
     //baConfigProvider.changeColors({
@@ -20,6 +20,12 @@
     //    white: '#ffffff',
     //  },
     //});
+
+    $translateProvider.useStaticFilesLoader({
+        prefix: 'app/locale/',
+        suffix: '.locale.json'
+    });
+    $translateProvider.preferredLanguage('en');
   }
 
   /** @ngInject */

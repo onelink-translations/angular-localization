@@ -9,26 +9,27 @@
       .controller('DashboardPieChartCtrl', DashboardPieChartCtrl);
 
   /** @ngInject */
-  function DashboardPieChartCtrl($scope, $timeout, baConfig, baUtil) {
+  function DashboardPieChartCtrl($scope, $timeout, baConfig, baUtil, $translate) {
     var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
+
     $scope.charts = [{
       color: pieColor,
-      description: 'New Visits',
+      description: 'new_visits',
       stats: '57,820',
       icon: 'person',
     }, {
       color: pieColor,
-      description: 'Purchases',
+      description: 'purchases',
       stats: '$ 89,745',
       icon: 'money',
     }, {
       color: pieColor,
-      description: 'Active Users',
+      description: 'active_users',
       stats: '178,391',
       icon: 'face',
     }, {
       color: pieColor,
-      description: 'Returned',
+      description: 'returned',
       stats: '32,592',
       icon: 'refresh',
     }

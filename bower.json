@@ -54,7 +54,9 @@
     "textAngular": "~1.4.6",
     "angular-xeditable": "~0.5.0",
     "ng-js-tree": "~0.0.7",
-    "angular-ui-select": "^0.19.6"
+    "angular-ui-select": "^0.19.6",
+    "angular-translate": "^2.15.1",
+    "angular-translate-loader-static-files": "^2.15.1"
   },
   "resolutions": {
     "angular": "~1.5.9",
@@ -101,5 +103,8 @@
         "fonts/fontawesome-webfont.woff2"
       ]
     }
+  },
+  "devDependencies": {
+    "angular-translate": "^2.15.1"
   }
 }

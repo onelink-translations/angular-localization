@@ -1,0 +1,13 @@
+{
+    "dashboard": {
+        "piechart": {
+            "charts": {
+                "new_visits": "New Visits",
+                "purchases": "Purchases",
+                "active_users": "Active Users",
+                "returned": "Returned"
+            }
+        }
+    },
+    "foo": "Bar"
+}
