@@ -14,7 +14,7 @@
         .state('dashboard', {
           url: '/dashboard',
           templateUrl: 'app/pages/dashboard/dashboard.html',
-          title: 'Dashboard',
+          title: 'routes.dashboard',
           sidebarMeta: {
             icon: 'ion-android-home',
             order: 0,

@@ -6,19 +6,19 @@
     </div>
     <label class="checkbox-inline custom-checkbox nowrap">
       <input type="checkbox" id="inlineCheckbox01" value="option1">
-      <span class="select-all-label">Select All</span>
+      <span class="select-all-label">{{ 'mail.select_all' | translate }}</span>
     </label>
     <button type="button" class="btn  btn-icon refresh-button"><i class="ion-refresh"></i></button>
     <div class="btn-group" uib-dropdown>
       <button type="button" class="btn more-button" uib-dropdown-toggle>
-        More <span class="caret"></span>
+        {{ 'mail.more' | translate }} <span class="caret"></span>
       </button>
       <ul uib-dropdown-menu>
-        <li><a href>Action</a></li>
-        <li><a href>Another action</a></li>
-        <li><a href>Something else here</a></li>
+        <li><a href>{{ 'mail.action' | translate }}</a></li>
+        <li><a href>{{ 'mail.another_action' | translate }}</a></li>
+        <li><a href>{{ 'mail.something_else_here' | translate }}</a></li>
         <li role="separator" class="divider"></li>
-        <li><a href>Separated link</a></li>
+        <li><a href>{{ 'mail.separated_link' | translate }}</a></li>
       </ul>
     </div>
   </div>

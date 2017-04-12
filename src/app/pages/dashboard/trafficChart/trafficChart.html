@@ -5,7 +5,7 @@
       <canvas id="chart-area" width="280" height="280"></canvas>
       <div class="traffic-text">
         1,900,128
-        <span>Views Total</span>
+        <span translate="dashboard.traffic.views_total"></span>
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
             <div class="channels-info-item" ng-repeat="label in doughnutData.labels"
                  ng-init="i = $index; data = doughnutData.datasets[0]">
                 <div class="legend-color" style="background-color: {{::data.backgroundColor[i]}}"></div>
-                <p>{{::label}}<span class="channel-number">+{{data.percentage[i]}}%</span></p>
+                <p>{{ ::label }}<span class="channel-number">+{{data.percentage[i]}}%</span></p>
                 <div class="progress progress-sm channel-progress">
                     <div class="progress-bar " role="progressbar"
                          aria-valuenow="{{data.percentage[i]}}" aria-valuemin="0" aria-valuemax="100"
@@ -26,4 +26,3 @@
         </div>
     </div>
 </div>
-

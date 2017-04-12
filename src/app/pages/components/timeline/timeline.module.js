@@ -14,7 +14,7 @@
       .state('components.timeline', {
         url: '/timeline',
         templateUrl: 'app/pages/components/timeline/timeline.html',
-          title: 'Timeline',
+          title: 'routes.timeline',
           sidebarMeta: {
             icon: 'ion-ios-pulse',
             order: 100,

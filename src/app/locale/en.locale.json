@@ -1,13 +1,101 @@
 {
+    "routes": {
+        "dashboard": "Dashboard",
+        "components": "Components",
+            "mail": "Mail",
+            "timeline": "Timeline",
+            "tree_view": "Tree View",
+        "charts": "Charts",
+            "am_charts": "amCharts",
+            "chartist": "Chartist",
+            "chartjs": "Chart.js",
+            "morris": "Morris",
+        "ui_features": "UI Features",
+            "typography": "Typography",
+            "buttons": "Buttons",
+            "icons": "Icons",
+            "modals": "Modals",
+        "form_elements": "Form Elements",
+            "form_inputs": "Form Inputs",
+            "form_layouts": "Form Layouts",
+            "form_wizard": "Form Wizard",
+        "tables": "Tables",
+            "basic_tables": "Basic Tables",
+            "smart_tables": "Smart Tables",
+        "pages": "Pages",
+            "sign_in": "Sign In",
+            "sign_up": "Sign Up",
+            "user_profile": "User Profile",
+            "404_page": "404 Page"
+    },
+
+    "theme": {
+        "home": "Home"
+    },
+
     "dashboard": {
-        "piechart": {
-            "charts": {
-                "new_visits": "New Visits",
-                "purchases": "Purchases",
-                "active_users": "Active Users",
-                "returned": "Returned"
-            }
+        "pie": {
+            "new_visits": "New Visits",
+            "purchases": "Purchases",
+            "active_users": "Active Users",
+            "returned": "Returned"
+        },
+
+        "acquisition_channels": "Acquisition Channels",
+        "traffic": {
+            "views_total": "Views Total",
+            "other": "Other",
+            "search_engines": "Search Engines",
+            "referral_traffic": "Referral Traffic",
+            "direct_traffic": "Direct Traffic",
+            "ad_campaigns": "Ad Campaigns"
+        },
+
+        "users_by_country": "Users by Country",
+        "map": {
+            "users": "users"
+        },
+
+        "revenue": "Revenue",
+
+        "popular": {
+            "super_app": "Super App",
+            "most_popular_app": "Most Popular App",
+            "total_visits": "Total Visits",
+            "new_visits": "New Visits",
+            "sales": "Sales"
+        },
+
+        "feed": "Feed"
+    },
+
+    "mail": {
+        "compose": "Compose",
+        "inbox": "Inbox",
+        "sent_mail": "Sent Mail",
+        "important": "Important",
+        "draft": "Draft",
+        "spam": "Spam",
+        "trash": "Trash",
+        "add_new_label": "Add New Label",
+        "select_all": "Select All",
+        "more": "More",
+        "action": "Action",
+        "another_action": "Another Action",
+        "something_else_here": "Something Else Here",
+        "separated_link": "Separated Link",
+        "tags": {
+            "work": "Work",
+            "family": "Family",
+            "friend": "Friend",
+            "study": "Study"
         }
     },
-    "foo": "Bar"
+
+    "tree_view": {
+        "add": "Add",
+        "collapse_all": "Collapse All",
+        "expand_all": "Expand All",
+        "refresh": "Refresh"
+    }
 }

@@ -5,7 +5,7 @@
         <div class="mail-navigation-container" ng-class="{'expanded' : !tabCtrl.navigationCollapsed}">
           <div class="text-center">
             <button type="button" class="btn btn-default compose-button" ng-click="tabCtrl.showCompose('','','')">
-              Compose
+              {{ 'mail.compose' | translate }}
             </button>
           </div>
           <div ng-repeat="t in tabCtrl.tabs" ui-sref-active="active" class="mail-navigation"
@@ -18,21 +18,21 @@
             </div>
             <div class="labels-container">
               <div class="label-item">
-                <span class="tag label work">Work</span>
+                <span class="tag label work">{{ 'mail.tags.work' | translate }}</span>
               </div>
               <div class="label-item">
-                <span class="tag label family">Family</span>
+                <span class="tag label family">{{ 'mail.tags.family' | translate }}</span>
               </div>
               <div class="label-item">
-                <span class="tag label friend">Friend</span>
+                <span class="tag label friend">{{ 'mail.tags.friend' | translate }}</span>
               </div>
               <div class="label-item">
-                <span class="tag label study">Study</span>
+                <span class="tag label study">{{ 'mail.tags.study' | translate }}</span>
               </div>
             </div>
           </div>
           <div class="add-label-container">
-            <i class="ion-plus-round"></i><span class="label-input-stub">Add new label</span>
+            <i class="ion-plus-round"></i><span class="label-input-stub">{{ 'mail.add_new_label' | translate }}</span>
           </div>
         </div>
         <ui-view></ui-view>

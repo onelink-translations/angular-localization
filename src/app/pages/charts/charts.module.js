@@ -20,7 +20,7 @@
           url: '/charts',
           abstract: true,
           template: '<div ui-view  autoscroll="true" autoscroll-body-top></div>',
-          title: 'Charts',
+          title: 'routes.charts',
           sidebarMeta: {
             icon: 'ion-stats-bars',
             order: 150,

@@ -1,12 +1,12 @@
 <div class="popular-app-img-container">
   <div class="popular-app-img">
     <img ng-src="{{::( 'app/my-app-logo.png' | appImage )}}"/>
-    <span class="logo-text">Super&nbspApp</span>
+    <span class="logo-text">{{ 'dashboard.popular.super_app' | translate }}</span>
   </div>
 </div>
 <div class="popular-app-cost row">
   <div class="col-xs-9">
-    Most Popular App
+    {{ 'dashboard.popular.most_popular_app' | translate }}
   </div>
   <div class="col-xs-3 text-right">
     175$
@@ -14,15 +14,15 @@
 </div>
 <div class="popular-app-info row">
   <div class="col-xs-4 text-left">
-    <div class="info-label">Total Visits</div>
+    <div class="info-label">{{ 'dashboard.popular.total_visits' | translate }}</div>
     <div>47,512</div>
   </div>
   <div class="col-xs-4 text-center">
-    <div class="info-label">New Visits</div>
+    <div class="info-label">{{ 'dashboard.popular.new_visits' | translate }}</div>
     <div>9,217</div>
   </div>
   <div class="col-xs-4 text-right">
-    <div class="info-label">Sales</div>
+    <div class="info-label">{{ 'dashboard.popular.sales' | translate }}</div>
     <div>2,928</div>
   </div>
 </div>

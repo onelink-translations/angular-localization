@@ -3,24 +3,24 @@
 <div class="row">
   <div class="col-lg-6 col-md-12 col-sm-12"
        ba-panel
-       ba-panel-title="Acquisition Channels"
+       ba-panel-title="{{ 'dashboard.acquisition_channels' | translate }}"
        ba-panel-class="medium-panel traffic-panel">
     <traffic-chart></traffic-chart>
   </div>
   <div class="col-lg-6 col-md-12 col-sm-12"
        ba-panel
-       ba-panel-title="Users by Country"
+       ba-panel-title="{{ 'dashboard.users_by_country' | translate }}"
        ba-panel-class="medium-panel">
     <dashboard-map></dashboard-map>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-xlg-9 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  <div class="col-xlg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="row">
       <div class="col-xlg-8 col-lg-12 col-md-12 col-sm-7 col-xs-12"
            ba-panel
-           ba-panel-title="Revenue"
+           ba-panel-title="{{ 'dashboard.revenue' | translate }}"
            ba-panel-class="medium-panel">
         <dashboard-line-chart></dashboard-line-chart>
       </div>
@@ -31,15 +31,15 @@
       </div>
     </div>
   </div>
-  <div class="col-xlg-3 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+  <!-- <div class="col-xlg-3 col-lg-6 col-md-6 col-sm-12 col-xs-12"
        ba-panel
-       ba-panel-title="Feed"
+       ba-panel-title="{{ 'dashboard.feed' | translate }}"
        ba-panel-class="large-panel with-scroll feed-panel">
     <blur-feed></blur-feed>
-  </div>
+  </div> -->
 </div>
 
-<div class="row shift-up">
+<!-- <div class="row shift-up">
   <div class="col-xlg-3 col-lg-6 col-md-6 col-xs-12"
        ba-panel
        ba-panel-title="To Do List"
@@ -52,7 +52,7 @@
        ba-panel-class="xmedium-panel feed-comply-panel with-scroll calendar-panel">
     <dashboard-calendar></dashboard-calendar>
   </div>
-</div>
+</div> -->
 
 <!--<div class="row">
   <div class="col-lg-4 col-sm-6 col-xs-12">

@@ -14,22 +14,22 @@
 
     $scope.charts = [{
       color: pieColor,
-      description: 'new_visits',
+      description: $translate.instant('dashboard.pie.new_visits'),
       stats: '57,820',
       icon: 'person',
     }, {
       color: pieColor,
-      description: 'purchases',
+      description: $translate.instant('dashboard.pie.purchases'),
       stats: '$ 89,745',
       icon: 'money',
     }, {
       color: pieColor,
-      description: 'active_users',
+      description: $translate.instant('dashboard.pie.active_users'),
       stats: '178,391',
       icon: 'face',
     }, {
       color: pieColor,
-      description: 'returned',
+      description: $translate.instant('dashboard.pie.returned'),
       stats: '32,592',
       icon: 'refresh',
     }

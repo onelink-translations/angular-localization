@@ -9,7 +9,8 @@
       .controller('DashboardMapCtrl', DashboardMapCtrl);
 
   /** @ngInject */
-  function DashboardMapCtrl(baConfig, layoutPaths) {
+  function DashboardMapCtrl(baConfig, layoutPaths, $translate) {
+
     var layoutColors = baConfig.colors;
     var map = AmCharts.makeChart('amChartMap', {
       type: 'map',
@@ -59,7 +60,7 @@
         alpha: 0.8,
         unlistedAreasAlpha: 0.2,
         unlistedAreasColor: layoutColors.defaultText,
-        balloonText: '[[title]]: [[customData]] users'
+        balloonText: '[[title]]: [[customData]] ' + $translate.instant('dashboard.map.users')
       },
 
 
@@ -77,19 +78,19 @@
         horizontalGap: 10,
         data: [
           {
-            title: 'over 1 000 users',
+            title: 'over 1 000 ' + $translate.instant('dashboard.map.users'),
             color: layoutColors.primary
           },
           {
-            title: '500 - 1 000 users',
+            title: '500 - 1 000 ' + $translate.instant('dashboard.map.users'),
             color: layoutColors.successLight
           },
           {
-            title: '100 - 500 users',
+            title: '100 - 500 ' + $translate.instant('dashboard.map.users'),
             color: layoutColors.success
           },
           {
-            title: '0 - 100 users',
+            title: '0 - 100 ' + $translate.instant('dashboard.map.users'),
             color: layoutColors.danger
           }
         ]
