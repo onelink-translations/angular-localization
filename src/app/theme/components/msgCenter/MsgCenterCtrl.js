@@ -9,7 +9,7 @@
       .controller('MsgCenterCtrl', MsgCenterCtrl);
 
   /** @ngInject */
-  function MsgCenterCtrl($scope, $sce) {
+  function MsgCenterCtrl($scope, $sce, $http, $translate) {
     $scope.users = {
       0: {
         name: 'Vlad',
@@ -25,43 +25,61 @@
       }
     };
 
-    $scope.notifications = [
-      {
-        userId: 0,
-        template: '&name posted a new article.',
-        time: '1 min ago'
-      },
-      {
-        userId: 1,
-        template: '&name changed his contact information.',
-        time: '2 hrs ago'
-      },
-      {
-        image: 'assets/img/shopping-cart.svg',
-        template: 'New orders received.',
-        time: '5 hrs ago'
-      },
-      {
-        userId: 2,
-        template: '&name replied to your comment.',
-        time: '1 day ago'
-      },
-      {
-        userId: 3,
-        template: 'Today is &name\'s birthday.',
-        time: '2 days ago'
-      },
-      {
-        image: 'assets/img/comments.svg',
-        template: 'New comments on your post.',
-        time: '3 days ago'
-      },
-      {
-        userId: 1,
-        template: '&name invited you to join the event.',
-        time: '1 week ago'
-      }
-    ];
+    $http.get('http://www.randomtext.me/api/gibberish/p-5/15-20')
+    .then(function(response) {
+        response.data.text_out = response.data.text_out.split('</p>')
+        response.data.text_out.pop()
+
+        console.log(response.data.text_out, Math.round(Math.random() * 3))
+
+        $scope.notifications = response.data.text_out.map(function(data, index) {
+            return {
+                userId: Math.round(Math.random() * 3),
+                template: data,
+                time: index
+            }
+        })
+
+        console.log($scope.notifications)
+    })
+
+    // $scope.notifications = [
+    //   {
+    //     userId: 0,
+    //     template: '&name posted a new article.',
+    //     time: '1 min ago'
+    //   },
+    //   {
+    //     userId: 1,
+    //     template: '&name changed his contact information.',
+    //     time: '2 hrs ago'
+    //   },
+    //   {
+    //     image: 'assets/img/shopping-cart.svg',
+    //     template: 'New orders received.',
+    //     time: '5 hrs ago'
+    //   },
+    //   {
+    //     userId: 2,
+    //     template: '&name replied to your comment.',
+    //     time: '1 day ago'
+    //   },
+    //   {
+    //     userId: 3,
+    //     template: 'Today is &name\'s birthday.',
+    //     time: '2 days ago'
+    //   },
+    //   {
+    //     image: 'assets/img/comments.svg',
+    //     template: 'New comments on your post.',
+    //     time: '3 days ago'
+    //   },
+    //   {
+    //     userId: 1,
+    //     template: '&name invited you to join the event.',
+    //     time: '1 week ago'
+    //   }
+    // ];
 
     $scope.messages = [
       {

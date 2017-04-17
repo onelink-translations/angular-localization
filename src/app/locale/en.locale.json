@@ -30,7 +30,20 @@
     },
 
     "theme": {
-        "home": "Home"
+        "home": "Home",
+        "notifications": {
+            "notifications": "Notifications",
+            "mark_all_as_read": "Mark All as Read",
+            "settings": "Settings",
+            "see_all_notifications": "See All Notifications"
+        },
+        "messages": {
+            "messages": "Messages",
+            "mark_all_as_read": "Mark All as Read",
+            "settings": "Settings",
+            "see_all_messages": "See All Messages"
+        },
+        "n_hours_ago": "{{ time }} hours ago"
     },
 
     "dashboard": {
